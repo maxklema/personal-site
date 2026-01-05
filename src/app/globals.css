@@ -1,6 +1,6 @@
 :root {
   --background: #fff7e9;
-  --link-hover: #f9efdf;
+  --accent: #f9efdf;
   --content-background: #e7c893;
   --foreground: #171717;
 }
@@ -16,12 +16,12 @@
 
 @font-face {
   font-family: 'header-medium';
-  src: url('./../../styles/Fonts/SourceSerif4_36pt-Medium.ttf');
+  src: url('/Fonts/SourceSerif4_36pt-Medium.ttf');
 }
 
 @font-face {
   font-family: 'normal';
-  src: url('./../../styles/Fonts/SourceSerif4_18pt-Regular.ttf');
+  src: url('/Fonts/SourceSerif4_18pt-Regular.ttf');
 }
 
 html,
@@ -53,10 +53,10 @@ a {
 }
 
 .site-main-frame {
-  width: 45vw;
+  width: 40vw;
   height: 100vh;
   padding: 3vh 2vw;
-  background: var(--content-background);
+  /* background: var(--content-background); */
 }
 
 .nav-bar {
@@ -74,7 +74,7 @@ a {
   content: '';
   position: absolute;
   height: 100%;
-  background: var(--link-hover);
+  background: var(--accent);
   border-radius: 5px;
   opacity: var(--opacity);
   width: var(--indicator-width);
@@ -99,9 +99,22 @@ a {
 .external-nav > a {
   padding: 0.6vh 0.3vw;
   border-radius: 3px;
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
+#githubIcon:hover {
+  color: #fff;
+  background: #24292e;
+}
 
+#linkedinIcon:hover {
+  background: #fff;
+  color: #0072b1;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const links = nav.querySelectorAll('a');
   let isNavActive = false; // Track if nav is currently active
   
-  links.forEach((link, index) => {
+  links.forEach((link) => {
     link.addEventListener('mouseenter', function() {
       const linkRect = link.getBoundingClientRect();
       const navRect = nav.getBoundingClientRect();

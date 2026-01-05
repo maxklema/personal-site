@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { Linkedin, Github } from 'lucide-react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +33,15 @@ export default function RootLayout({
             <div className={'site-nav'} id="site-nav">
               <Link href="/">about</Link>
               <Link href="/writing">writings</Link>
-              <Link href="/resume">resume</Link>
+              <Link href="/maxklemaresume2025.pdf" target="_blank">resume</Link>
             </div>
             <div className={'external-nav'}>
-              <Link href="https://www.linkedin.com/in/maxwell-klema/" target="_blank">LinkedIn</Link>
-              <Link href="https://github.com/" target="_blank">GitHub</Link>
+              <Link href="https://www.linkedin.com/in/maxwell-klema/" id={'linkedinIcon'} target="_blank">
+                <Linkedin size={22} strokeWidth={1.3}/>
+              </Link>
+              <Link href="https://github.com/maxklema" id={'githubIcon'} target="_blank">
+                <Github size={22} strokeWidth={1.5} />
+              </Link>
             </div>
           </div>
           {children}
