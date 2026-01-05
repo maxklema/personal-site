@@ -3,13 +3,15 @@
   --foreground: #fff;
 
   --text-primary: #000;
-  --text-secondary: #666;
+  --text-secondary: #8f8f8f;
 
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
   --button-secondary-border: #ebebeb;
 
 }
+
+/* Bio Frame */
 
 .aboutPageMainframe {
   padding: 5vh 0vw 5vh 0.6vw;
@@ -73,9 +75,66 @@
   font-style: italic;
 }
 
-#email {
+#hyperlink {
   background: var(--accent);
   padding: 0.2vh 0.4vw;
   border-radius: 5px;
+  font-size: 14px !important;
+  color: var(--text-secondary);
+}
+
+#hyperlink:hover {
+  color: var(--text-primary);
+}
+
+/* Experience Frame */
+
+.experienceFrame {
+  border-top: solid 0.5px #e9e7db;
+  padding: 2vh 0vw;
+  margin-top: 4vh;
+  /* background-color: lime; */
+}
+
+#experienceHeader {
+  margin-bottom: 3vh;
+}
+
+/* Experience Card */
+
+.experienceCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: rgba(0, 255, 0, 0.407); */
+  border-radius: 5px;
+}
+
+.experienceCardDescription {
+  width: 93%;
+}
+
+.experienceCardTitleParent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 0.5vh;
+}
+
+#experienceDate {
+  font-style: italic;
+  font-size: 14px;
+}
+
+#experienceTitle {
+  font-size: 14px;
+}
+
+#experienceCompany {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#experienceDescription {
   font-size: 14px;
 }

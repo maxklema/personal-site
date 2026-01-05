@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--se)
+}
+
 .site-main-frame {
   width: 40vw;
   height: 100vh;
@@ -109,11 +113,13 @@ a {
 #githubIcon:hover {
   color: #fff;
   background: #24292e;
+  transition: all 0.3s ease-in-out;
 }
 
 #linkedinIcon:hover {
   background: #fff;
   color: #0072b1;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
