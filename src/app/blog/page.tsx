@@ -3,6 +3,6 @@ import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <h1>Hello, World!</h1>
+    <Image src="/window.svg" alt="Profile" width={100} height={100} />
   );
 }
