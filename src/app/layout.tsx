@@ -29,10 +29,10 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className={'site-main-frame'}>
           <div className={'nav-bar'}>
-            <div className={'site-nav'}>
-              <Link href="/">Home</Link>
-              <Link href="/writing">Writings</Link>
-              <Link href="/resume">Resume</Link>
+            <div className={'site-nav'} id="site-nav">
+              <Link href="/">about</Link>
+              <Link href="/writing">writings</Link>
+              <Link href="/resume">resume</Link>
             </div>
             <div className={'external-nav'}>
               <Link href="https://www.linkedin.com/in/maxwell-klema/" target="_blank">LinkedIn</Link>
@@ -41,6 +41,7 @@ export default function RootLayout({
           </div>
           {children}
         </div>
+        <script src="./scripts/nav-animation.js"></script>
       </body>
     </html>
   );
