@@ -48,7 +48,7 @@ export default function Page() {
               Proxmox LaunchPad
             </Link>. The cluster now supports 75+ active projects and 150+ containers organization-wide.</p>}
         />
-        <br /><br />
+        <br />
         <ExperienceCard
           imgSrc="./MIE.svg"
           imgAlt="MIE Logo SVG"
@@ -63,7 +63,7 @@ export default function Page() {
             , a mobile companion app bringing native functionality to WebChart.
           </p>}
         />
-        <br /><br />
+        <br />
         <ExperienceCard
           imgSrc="./CodeClouds.png"
           imgAlt="CodeClouds Logo SVG"
@@ -95,7 +95,20 @@ export default function Page() {
         />
       </div>
 
-
+      {/* CI Terminal */}
+      <div className={styles.terminalFrame}>
+        <div className={styles.ciTerminal}>
+          <div className={styles.ciTerminalUpperFrame}>
+            <span id={styles.redTrafficLight}></span>
+            <span id={styles.yellowTrafficLight}></span>
+            <span id={styles.greenTrafficLight}></span>
+            <strong style={{ marginLeft: '8px' }}>mklema-ci • build #427</strong>
+            <button id="rerun">run again</button>
+          </div>
+          <pre id="log"></pre>
+        </div>
+        <script src="/scripts/terminal-animation.js"></script>
+      </div>
     </div>
   );
 }
