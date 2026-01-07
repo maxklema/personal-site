@@ -1,9 +1,11 @@
 import styles from "./card.module.css";
+import Link from "next/link";
 
 export default function ExperienceCard({
     imgSrc,
     imgAlt,
     companyName,
+    companyURL,
     positionTitle,
     positionDate,
     experienceDesc
@@ -11,6 +13,7 @@ export default function ExperienceCard({
     imgSrc: string;
     imgAlt: string;
     companyName: string;
+    companyURL: string;
     positionTitle: string;
     positionDate: string;
     experienceDesc: any;
@@ -18,7 +21,9 @@ export default function ExperienceCard({
     return (
         <div className={styles.experienceCard}>
             <div className={styles.experienceCardLogo}>
-                <img src={imgSrc} alt={imgAlt} width={30} height={30} />
+                <Link href={companyURL} target="_blank">
+                    <img src={imgSrc} alt={imgAlt} width={30} height={30} />
+                </Link>
             </div>
             <div className={styles.experienceCardDescription}>
                 <div className={styles.experienceCardTitleParent}>

@@ -15,9 +15,9 @@ export default function Page() {
             <p>he/him</p>
           </div>
           <br />
-          <p>Hello! I am a developer/learner/vim-enjoyer studying Computer Science. I am currently a junior and will graduate in May 2027.</p>
+          <p>Hello! I’m a developer, lifelong learner, and vim enjoyer studying Computer Science. I’m currently a junior and graduate in May 2027.</p>
           <br />
-          <p>I am passionate about building impactful and reliable solutions. My current area of study is DevSecOps, CI/CD automation, cloud infrastructure, and distributed systems.</p>
+          <p>I enjoy building reliable, impactful software and learning how systems scale. My current interests include DevSecOps, CI/CD automation, cloud infrastructure, and distributed systems.</p>
           <br />
           <p>Feel free to contact me at</p>
           <a href="mailto:klemmr02@purdue.edu" id={styles.hyperlink}>klemmr02@purdue.edu</a>
@@ -36,46 +36,64 @@ export default function Page() {
           imgSrc="./MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
+          companyURL="https://mieweb.org/"
           positionTitle="Software Developer Intern"
           positionDate="Summer 2025"
-          experienceDesc={<p>Co-spearheaded a company-wide open-source{" "}
+          experienceDesc={<p>Co-led the design and deployment of a company-wide, open-source{" "}
             <Link href="https://opensource.mieweb.org/" target="_blank" id={styles.hyperlink}>
               Proxmox Cluster
             </Link>{" "}
-            along with custom CI/CD tools, such as{" "}
+            with custom CI/CD tools, such as{" "}
             <Link href="https://github.com/marketplace/actions/proxmox-launchpad" target="_blank" id={styles.hyperlink}>
               Proxmox LaunchPad
-            </Link>.</p>}
+            </Link>. The cluster now supports 75+ active projects and 150+ containers organization-wide.</p>}
         />
         <br /><br />
         <ExperienceCard
           imgSrc="./MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
+          companyURL="https://mieweb.org/"
           positionTitle="Software Developer Intern"
           positionDate="Summer 2024"
-          experienceDesc={<p>Developed{" "}
-            <Link href="https://www.npmjs.com/package/@maxklema/mie-api-tools" target="_blank" id={styles.hyperlink}>WebChart API Tools</Link>, including WebChart{'\''}s chart export tool using with multithreading using Node.js worker_threads, improving upload speed by 90% in high-volume patient data
-            handling. Created {" "}
+          experienceDesc={<p>Built{" "}
+            <Link href="https://www.npmjs.com/package/@maxklema/mie-api-tools" target="_blank" id={styles.hyperlink}>WebChart API Tools</Link>, including a <Link href="https://github.com/maxklema/mie-data-migration" target="_blank" id={styles.hyperlink}>CLI import/export workflow</Link> that reduced chart import times by an average of 90%.
+            Additionally developed {" "}
             <Link href="https://github.com/maxklema/WebChart-Go" target="_blank" id={styles.hyperlink}>WebChart Go</Link>
-            , too, a mobile application interface to WebChart.
-            </p>}
+            , a mobile companion app bringing native functionality to WebChart.
+          </p>}
         />
         <br /><br />
         <ExperienceCard
           imgSrc="./CodeClouds.png"
           imgAlt="CodeClouds Logo SVG"
           companyName="CodeClouds"
+          companyURL="https://www.codeclouds.com/"
           positionTitle="Web Development and Design Intern"
           positionDate="Summer & Fall 2022"
-          experienceDesc={<p>Wireframing, web development, and graphic design. 
-            Created <Link href="https://ariseroanoke.org/" target="_blank" id={styles.hyperlink}>Arise Church site</Link>.
-            </p>}
+          experienceDesc={<p>Led web development, wireframing, and graphic design efforts for multiple websites,
+            including the <Link href="https://ariseroanoke.org/" target="_blank" id={styles.hyperlink}>Arise Church site</Link>.
+          </p>}
         />
-
-
       </div>
 
+      {/* EDUCATION */}
+      <div className={styles.educationFrame}>
+        <h3 id={styles.experienceHeader}>where I study</h3>
+        <ExperienceCard
+          imgSrc="./PFW.png"
+          imgAlt="MIE Logo SVG"
+          companyName="Purdue University - Fort Wayne"
+          companyURL="https://www.pfw.edu/"
+          positionTitle="B.S. in Computer Science"
+          positionDate="Fall 2023 - Spring 2027"
+          experienceDesc={<p>
+            <Link href="https://www.pfw.edu/summit-scholars/chapman-scholars" target="_blank" id={styles.hyperlink}>Chapman Scholar (full-ride scholarship)</Link> and {" "}
+            <Link href="https://www.pfw.edu/etcs/student-success-center" target="_blank" id={styles.hyperlink}>LEAD mentor</Link>.{" "}
+            Currently creating PFW Nexus, an online mentoring and networking platform for students.
+          </p>}
+        />
+      </div>
 
 
     </div>

@@ -91,9 +91,8 @@
 
 .experienceFrame {
   border-top: solid 0.5px #e9e7db;
-  padding: 2vh 0vw;
+  padding: 2vh 0vw 1vh 0vw;
   margin-top: 4vh;
-  /* background-color: lime; */
 }
 
 #experienceHeader {
@@ -137,4 +136,12 @@
 
 #experienceDescription {
   font-size: 14px;
+}
+
+/* Education Frame */
+
+.educationFrame {
+  border-top: solid 0.5px #e9e7db;
+  padding: 2vh 0vw;
+  margin-top: 4vh;
 }
