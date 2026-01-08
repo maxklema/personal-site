@@ -102,7 +102,7 @@ export default function Page() {
             <span id={styles.redTrafficLight}></span>
             <span id={styles.yellowTrafficLight}></span>
             <span id={styles.greenTrafficLight}></span>
-            <strong style={{ marginLeft: '8px' }}>mklema-ci • build #427</strong>
+            <strong id="ciInfo" style={{ marginLeft: '8px' }}></strong>
             <button id="rerun">run again</button>
           </div>
           <pre id="log"></pre>
