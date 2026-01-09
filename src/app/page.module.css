@@ -11,16 +11,25 @@
   --button-secondary-border: #ebebeb;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
 /* Bio Frame */
 
 .aboutPageMainframe {
-  padding: 5vh 0vw 5vh 0.6vw;
-  /* background-color: lime; */
+  padding: 5vh 0px 5vh 11.52px;
 }
 
 .bioFrame {
   display: flex;
-  /* background-color: lime; */
   justify-content: space-between;
   flex-direction: row;
 }
@@ -28,6 +37,7 @@
 #nameHeader {
   font-family: 'header-medium';
   font-size: 35px;
+  animation: fadeIn 1.5s ease-in forwards;
 }
 
 #introHeader {
@@ -50,17 +60,29 @@
   flex-direction: row;
   align-items: center;
   width: 90%;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
 }
 
 .subBio p {
   background: var(--accent);
-  padding: 0.2vh 0.4vw;
+  padding: 0.2vh 7.68px;
   border-radius: 5px;
   font-size: 14px;
 }
 
+.introPar {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.2s;
+}
+
 .portrait {
   max-width: 45%;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.4s;
 }
 
 .portrait img {
@@ -77,7 +99,7 @@
 
 #hyperlink {
   background: var(--accent);
-  padding: 0.2vh 0.4vw;
+  padding: 0.2vh 7.68px;
   border-radius: 5px;
   font-size: 14px !important;
   color: var(--text-secondary);
@@ -87,71 +109,117 @@
   color: var(--text-primary);
 }
 
+@media (max-width: 659px) {
+  .subBio {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .aboutPageMainframe {
+    padding: 5vh 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bioFrame {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .bio {
+    max-width: 100%;
+  }
+
+  .portrait {
+    max-width: 100%;
+  }
+
+  .subBio {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 410px) {
+  .subBio {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    gap: 7px;
+  }
+}
+
 /* Experience Frame */
 
 .experienceFrame {
   border-top: solid 0.5px #e9e7db;
-  padding: 2vh 0vw 1vh 0vw;
-  margin-top: 4vh;
+  padding: 2vh 0px 0vh 0px;
+  margin-top: 3vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.4s;
+}
+
+.experienceFrame>*:not(:last-child) {
+  margin-bottom: 3vh;
 }
 
 #experienceHeader {
   margin-bottom: 3vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.4s;
 }
 
-/* Experience Card */
-
-.experienceCard {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* background-color: rgba(0, 255, 0, 0.407); */
-  border-radius: 5px;
+:global(#mie-2025) {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
 }
 
-.experienceCardDescription {
-  width: 93%;
+:global(#mie-2024) {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.7s;
 }
 
-.experienceCardTitleParent {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-bottom: 0.5vh;
-}
-
-#experienceDate {
-  font-style: italic;
-  font-size: 14px;
-}
-
-#experienceTitle {
-  font-size: 14px;
-}
-
-#experienceCompany {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-#experienceDescription {
-  font-size: 14px;
+:global(#cc-2022) {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.9s;
 }
 
 /* Education Frame */
 
 .educationFrame {
   border-top: solid 0.5px #e9e7db;
-  padding: 2vh 0vw;
-  margin-top: 4vh;
+  padding: 2vh 0px 0vh 0px;
+  margin-top: 3vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+:global(#pfw-2027) {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.2s;
 }
 
 /* Terminal Frame */
 
 .terminalFrame {
   border-top: solid 0.5px #e9e7db;
-  padding: 3vh 0vw;
+  padding: 3vh 0px 1vh 0px;
   margin-top: 3vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.3s;
 }
 
 .ciTerminal {
@@ -160,7 +228,10 @@
   color: var(--accent);
   border: 1px solid var(--text-primary);
   border-radius: 5px;
-  padding: 1.25vh 0.75vw;
+  padding: 1.25vh 14.4px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.5s;
 }
 
 .ciTerminalUpperFrame {
@@ -201,7 +272,7 @@
   font-family: 'normal';
   border: 1px solid #384154;
   border-radius: 6px;
-  padding: 0.3vh 0.5vw;
+  padding: 0.3vh 9.6px;
   cursor: pointer;
 }
 

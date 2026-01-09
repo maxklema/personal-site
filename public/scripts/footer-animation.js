@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   footerLinks.forEach((link) => {
     link.addEventListener('mouseenter', function() {
 
-      // console.log("mouse entered!");
       const linkRect = link.getBoundingClientRect();
       const footerNavOffset = footerNav.getBoundingClientRect();
       const offsetX = linkRect.left - footerNavOffset.left;
@@ -20,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isFooterNavActive = true;
       }
 
-      console.log("width: " + linkRect.width);
-      console.log("offsetX: " + offsetX);
       footerNav.style.setProperty('--footer-indicator-width', linkRect.width + 'px');
       footerNav.style.setProperty('--footer-indicator-x', offsetX + 'px');
       footerNav.style.setProperty('--footer-opacity', '1');

@@ -8,7 +8,8 @@ export default function ExperienceCard({
     companyURL,
     positionTitle,
     positionDate,
-    experienceDesc
+    experienceDesc,
+    id
 }: {
     imgSrc: string;
     imgAlt: string;
@@ -17,9 +18,10 @@ export default function ExperienceCard({
     positionTitle: string;
     positionDate: string;
     experienceDesc: any;
+    id?: string;
 }) {
     return (
-        <div className={styles.experienceCard}>
+        <div className={styles.experienceCard} id={id}>
             <div className={styles.experienceCardLogo}>
                 <Link href={companyURL} target="_blank">
                     <img src={imgSrc} alt={imgAlt} width={30} height={30} />

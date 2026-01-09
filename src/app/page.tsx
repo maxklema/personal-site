@@ -15,16 +15,16 @@ export default function Page() {
             <p>he/him</p>
           </div>
           <br />
-          <p>Hello! I’m a developer, lifelong learner, and vim enjoyer studying Computer Science. I’m currently a junior and graduate in May 2027.</p>
+          <p className={styles.introPar}>Hello! I’m a developer, lifelong learner, and vim enjoyer studying Computer Science. I’m currently a junior and graduate in May 2027.</p>
           <br />
-          <p>I enjoy building reliable, impactful software and learning how systems scale. My current interests include DevSecOps, CI/CD automation, cloud infrastructure, and distributed systems.</p>
+          <p className={styles.introPar}>I enjoy building reliable, impactful software and learning how systems scale. My current interests include DevSecOps, CI/CD automation, cloud infrastructure, and distributed systems.</p>
           <br />
-          <p>Feel free to contact me at</p>
-          <a href="mailto:klemmr02@purdue.edu" id={styles.hyperlink}>klemmr02@purdue.edu</a>
+          <p className={styles.introPar}>Feel free to contact me at</p>
+          <a href="mailto:klemmr02@purdue.edu" className={styles.introPar} id={styles.hyperlink}>klemmr02@purdue.edu</a>
         </div>
         <div className={styles.portrait}>
-          <img src="/max-portrait.jpeg" alt="Max Klema Portrait 2025" />
-          <p>taken: 12/31/25</p>
+          <img src="/max.png" alt="Max Klema Portrait 2025" />
+          <p>taken: 01/6/26</p>
         </div>
       </div>
 
@@ -33,6 +33,7 @@ export default function Page() {
       <div className={styles.experienceFrame}>
         <h3 id={styles.experienceHeader}>where I have been</h3>
         <ExperienceCard
+          id="mie-2025"
           imgSrc="./MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
@@ -48,8 +49,8 @@ export default function Page() {
               Proxmox LaunchPad
             </Link>. The cluster now supports 75+ active projects and 150+ containers organization-wide.</p>}
         />
-        <br />
         <ExperienceCard
+          id="mie-2024"
           imgSrc="./MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
@@ -63,8 +64,8 @@ export default function Page() {
             , a mobile companion app bringing native functionality to WebChart.
           </p>}
         />
-        <br />
         <ExperienceCard
+          id="cc-2022"
           imgSrc="./CodeClouds.png"
           imgAlt="CodeClouds Logo SVG"
           companyName="CodeClouds"
@@ -81,12 +82,13 @@ export default function Page() {
       <div className={styles.educationFrame}>
         <h3 id={styles.experienceHeader}>where I study</h3>
         <ExperienceCard
+          id="pfw-2027"
           imgSrc="./PFW.png"
           imgAlt="MIE Logo SVG"
           companyName="Purdue University - Fort Wayne"
           companyURL="https://www.pfw.edu/"
           positionTitle="B.S. in Computer Science"
-          positionDate="Fall 2023 - Spring 2027"
+          positionDate="Fall 2023 — Spring 2027"
           experienceDesc={<p>
             <Link href="https://www.pfw.edu/summit-scholars/chapman-scholars" target="_blank" id={styles.hyperlink}>Chapman Scholar (full-ride scholarship)</Link> and {" "}
             <Link href="https://www.pfw.edu/etcs/student-success-center" target="_blank" id={styles.hyperlink}>LEAD mentor</Link>.{" "}
