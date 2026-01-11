@@ -84,6 +84,7 @@ export default function Page() {
       const handleRerun = () => run();
       rerun.addEventListener("click", handleRerun);
       
+      // clear all timers and remove event listener for component unmounting
       const cleanup = () => {
         clearAllTimeouts();
         rerun.removeEventListener("click", handleRerun);

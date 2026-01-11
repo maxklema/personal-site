@@ -3,7 +3,7 @@
 }
 
 .writingsTitle {
-    margin-left: 11.52px;
+    margin-left: 15.36px;
 }
 
 .blogGrid {
@@ -16,11 +16,10 @@
     width: 45%;
 }
 
-
 .blogPost {
     margin-bottom: 3vh;
     border-radius: 5px;
-    padding: 10px 11.52px;
+    padding: 2vh 15.36px;
 }
 
 .blogPost:hover {

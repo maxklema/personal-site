@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const linkRect = link.getBoundingClientRect();
       const navRect = nav.getBoundingClientRect();
       const offsetX = linkRect.left - navRect.left;
-    
       if (isNavActive) {
         nav.style.setProperty('--left-delay', '0.3s');
         nav.style.setProperty('--width-delay', '0.3s');
