@@ -1,8 +1,101 @@
+'use client'
+
 import Link from "next/link";
 import styles from "./page.module.css";
 import ExperienceCard from "@/components/experience card/card";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    const steps: [string, number][] = [
+      ["Checkout code…", 400],
+      ["Setup Node.js 20…", 1000],
+      ["Install deps (pnpm)…", 3000],
+      ["Lint…", 1800],
+      ["Lint passed (32 files)", 300],
+      ["Test…", 2500],
+      ["128 tests passed • coverage 92%", 300],
+      ["Build…", 2500],
+      ["Build complete (12.4 MB)", 300],
+      ["Containerize…", 1500],
+      ["Image pushed ghcr.io/maxklema/site:427", 300],
+      ["Deploy to Proxmox…", 1200],
+      ["Deployed • 2 pods • 35ms p95", 300],
+      ["Pipeline succeeded in 15s", 200]
+    ];
+
+    const logEl = document.getElementById("log");
+    const rerun = document.getElementById("rerun");
+    const ciInfo = document.getElementById("ciInfo");
+    let buildNo = 1;
+    
+    let currentTimeouts: NodeJS.Timeout[] = [];
+    
+    function clearAllTimeouts() {
+      currentTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
+      currentTimeouts = [];
+    }
+    
+    function getTime() {
+      const d = new Date();
+      const pad = (n: number) => String(n).padStart(2, '0');
+      let seconds = pad(d.getSeconds());
+      let minutes = pad(d.getMinutes());
+      let hours = pad(d.getHours());
+      return `[${hours}:${minutes}:${seconds}] `;
+    }
+
+    function run() {
+      clearAllTimeouts();
+      let i = 0;
+      if (ciInfo) ciInfo.textContent = `mklema-ci • build #${buildNo}`;
+      if (logEl) logEl.textContent = "";
+
+      function displayStep() {
+        i++;
+        if (i >= steps.length) {
+          const restartTimeoutId = setTimeout(() => {
+            buildNo++;
+            run();
+          }, 3000);
+          currentTimeouts.push(restartTimeoutId);
+          return;
+        }
+
+        if (logEl) {
+          logEl.textContent += getTime() + steps[i][0] + "\n";
+          logEl.scrollTop = logEl.scrollHeight;
+        }
+        
+        const timeoutId = setTimeout(displayStep, steps[i][1]);
+        currentTimeouts.push(timeoutId);
+      }
+
+      if (logEl) {
+        logEl.textContent = getTime() + steps[i][0] + "\n";
+        logEl.scrollTop = logEl.scrollHeight;
+      }
+      
+      const nextTimeoutId = setTimeout(displayStep, steps[i][1]);
+      currentTimeouts.push(nextTimeoutId);
+    }
+
+    if (rerun) {
+      const handleRerun = () => run();
+      rerun.addEventListener("click", handleRerun);
+      
+      const cleanup = () => {
+        clearAllTimeouts();
+        rerun.removeEventListener("click", handleRerun);
+      };
+
+      const initialTimeoutId = setTimeout(run, 3300);
+      currentTimeouts.push(initialTimeoutId);
+
+      return cleanup;
+    }
+  }, []); 
+
   return (
     <div className={styles.aboutPageMainframe}>
 
@@ -109,7 +202,6 @@ export default function Page() {
           </div>
           <pre id="log"></pre>
         </div>
-        <script src="/scripts/terminal-animation.js"></script>
       </div>
     </div>
   );

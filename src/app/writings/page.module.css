@@ -1,0 +1,47 @@
+.pageMainFrame {
+    padding: 5vh 0px;
+}
+
+.writingsTitle {
+    margin-left: 11.52px;
+}
+
+.blogGrid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.gridCol {
+    width: 45%;
+}
+
+
+.blogPost {
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    padding: 10px 11.52px;
+}
+
+.blogPost:hover {
+    background-color: antiquewhite;
+}
+
+.blogImage {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+}
+
+.blogDate {
+    font-family: 'normal';
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0.5vh;
+}
+
+.blogTitle {
+     font-family: 'normal';
+    font-weight: 500;
+    font-size: 18px;
+}

@@ -35,7 +35,7 @@ export default function RootLayout({
           <div className={'nav-bar'}>
             <div className={'site-nav'} id="site-nav">
               <Link href="/">about</Link>
-              <Link href="/writing">writings</Link>
+              <Link href="/writings">writings</Link>
               <Link href="/maxklemaresume2025.pdf" target="_blank">resume</Link>
             </div>
             <div className={'external-nav'}>

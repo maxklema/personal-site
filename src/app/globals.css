@@ -69,9 +69,7 @@ p {
 .site-main-frame {
   width: 100%;
   max-width: 770px;
-  min-height: 100vh;
   padding: 3vh 38.4px;
-  /* background: var(--content-background); */
 }
 
 .nav-bar {
