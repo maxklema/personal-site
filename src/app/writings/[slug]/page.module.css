@@ -20,10 +20,55 @@
     margin: 1rem 0;
 }
 
+.blogMainFrame a {
+    background: var(--accent);
+    padding: 0.2vh 7.68px;
+    border-radius: 5px;
+    font-size: 14px !important;
+    color: var(--text-secondary);
+}
+
+.blogMainFrame a:hover {
+    color: var(--text-primary);
+}
+
 .blogDescription {
     font-size: 15px;
     font-style: italic;
 }
 
+/* 404 styles */
 
+.blogNotFoundMainFrame {
+    padding: 10vh 0px 10vh 15.36px;
+}
 
+.errorImg {
+    max-width: 100px;
+    margin: 0vh auto 4vh auto;
+    display: block;
+}
+
+.errorHeading {
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: 18px;
+}
+
+.paragraphError {
+    text-align: center;
+}
+
+.hyperLink {
+    background: var(--accent);
+    padding: 0.2vh 7.68px;
+    border-radius: 5px;
+    font-size: 14px !important;
+    color: var(--text-secondary);
+}
+
+.hyperLink:hover {
+    color: var(--text-primary);
+}
+
+/* Error Page */

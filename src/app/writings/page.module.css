@@ -1,15 +1,30 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .pageMainFrame {
     padding: 5vh 0px;
 }
 
 .writingsTitle {
     margin-left: 15.36px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;    
 }
 
 .blogGrid {
     display: flex;
     justify-content: space-between;
     margin-top: 2vh;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
 
 .gridCol {
