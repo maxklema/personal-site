@@ -71,4 +71,8 @@
     color: var(--text-primary);
 }
 
-/* Error Page */
+@media (max-width: 500px) {
+    .blogMainFrame {
+        padding: 5vh 15.36px 5vh 15.36px;
+    }
+}

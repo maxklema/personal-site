@@ -5,6 +5,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Linkedin, Github } from 'lucide-react';
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -92,6 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Analytics />
         <title>Maxwell Klema</title>
         <meta name="description" content="Maxwell Klema personal website." />
         <meta name="color-scheme" content="light" />

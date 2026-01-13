@@ -197,7 +197,8 @@ p {
 
 @media (max-width: 632px) {
   .footer-nav {
-    gap: 5px;
+    gap: 3px !important;
+    margin-bottom: 1.5vh;
   }
 
   .footer {
@@ -212,11 +213,11 @@ p {
 
 @media (max-width: 500px) {
   .nav-bar {
-    padding-left: 12px;
+    padding: 0 15.36px;
   }
 
   .site-main-frame {
-    padding: 3vh 10px;
+    padding: 3vh 12px;
   }
 
   .site-nav {
@@ -228,13 +229,13 @@ p {
   }
 
   .site-nav>a {
-    padding: 0.6vh 0px;
+    padding: 0.6vh 5px;
   }
 }
 
 @media (max-width: 431px) {
   .footer-nav {
-    gap: 15px;
+    gap: 5px;
   }
 }
 
@@ -244,7 +245,7 @@ p {
   }
 
   .footer-nav>a {
-    padding: 0.6vh 0px;
+    padding: 0.6vh 5px;
   }
 }
 

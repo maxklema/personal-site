@@ -157,7 +157,7 @@
 /* Experience Frame */
 
 .experienceFrame {
-  border-top: solid 0.5px #e9e7db;
+  border-top: solid 1px #e9e7db;
   padding: 2vh 0px 0vh 0px;
   margin-top: 3vh;
   opacity: 0;
@@ -197,7 +197,7 @@
 /* Education Frame */
 
 .educationFrame {
-  border-top: solid 0.5px #e9e7db;
+  border-top: solid 1px #e9e7db;
   padding: 2vh 0px 0vh 0px;
   margin-top: 3vh;
   opacity: 0;
@@ -214,7 +214,7 @@
 /* Terminal Frame */
 
 .terminalFrame {
-  border-top: solid 0.5px #e9e7db;
+  border-top: solid 1px #e9e7db;
   padding: 3vh 0px 1vh 0px;
   margin-top: 3vh;
   opacity: 0;
