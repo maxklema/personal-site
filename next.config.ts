@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   experimental: {
     globalNotFound: true,
-  },
+  }
 };
 
 const withMDX = createMDX({

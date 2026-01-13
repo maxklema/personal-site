@@ -20,9 +20,13 @@
 
 .blogGrid {
     display: grid;
+    opacity: 0;
     margin-top: 2vh;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 0.5s;
+
 }
 
 @media (max-width: 654px) {

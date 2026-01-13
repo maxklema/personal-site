@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ES2017",
     "baseUrl": "src/", //absolute imports, i.e '@/components/button'
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,9 +24,15 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/styles/*": ["styles/*"],
-      "@/components/*": ["components/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ]
     }
   },
   "include": [
@@ -31,7 +41,12 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "src/app/writings/[slug]/page.tsx"  ],
-  "exclude": ["node_modules"]
+    "**/*.mts",
+    "src/app/writings/[slug]/page.tsx",
+    "build/types/**/*.ts",
+    "build/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
