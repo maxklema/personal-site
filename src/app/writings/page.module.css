@@ -21,7 +21,7 @@
 .blogGrid {
     display: grid;
     margin-top: 2vh;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
