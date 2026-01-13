@@ -1,5 +1,5 @@
 .blogMainFrame {
-    padding: 5vh 0px 5vh 15.36px;
+    padding: 5vh 15.36px;
 }
 
 .blogTitle {
@@ -40,7 +40,7 @@
 /* 404 styles */
 
 .blogNotFoundMainFrame {
-    padding: 10vh 0px 10vh 15.36px;
+    padding: 10vh 15.36px 10vh 15.36px;
 }
 
 .errorImg {
@@ -71,8 +71,8 @@
     color: var(--text-primary);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 659px) {
     .blogMainFrame {
-        padding: 5vh 15.36px 5vh 15.36px;
+        padding: 5vh 10px;
     }
 }

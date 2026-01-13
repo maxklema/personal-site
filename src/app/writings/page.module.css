@@ -29,13 +29,6 @@
 
 }
 
-@media (max-width: 654px) {
-    .blogGrid {
-        grid-template-columns: auto;
-        gap: 0vh !important;
-    }
-}
-
 .blogPost {
     margin-bottom: 3vh;
     border-radius: 5px;
@@ -63,4 +56,19 @@
     font-family: 'normal';
     font-weight: 500;
     font-size: 18px;
+}
+
+@media (max-width: 659px) {
+    .blogGrid {
+        grid-template-columns: auto;
+        gap: 0vh !important;
+    }
+
+    .writingsTitle {
+        margin-left: 10px;
+    }
+
+    .blogPost {
+        padding: 2vh 10px !important;
+    }
 }

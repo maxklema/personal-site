@@ -129,7 +129,7 @@ export default function Page() {
         <h3 id={styles.experienceHeader}>where I have been</h3>
         <ExperienceCard
           id="mie-2025"
-          imgSrc="./MIE.svg"
+          imgSrc="/MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
           companyURL="https://mieweb.org/"
@@ -146,7 +146,7 @@ export default function Page() {
         />
         <ExperienceCard
           id="mie-2024"
-          imgSrc="./MIE.svg"
+          imgSrc="/MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
           companyURL="https://mieweb.org/"
@@ -161,7 +161,7 @@ export default function Page() {
         />
         <ExperienceCard
           id="cc-2022"
-          imgSrc="./CodeClouds.png"
+          imgSrc="/CodeClouds.png"
           imgAlt="CodeClouds Logo SVG"
           companyName="CodeClouds"
           companyURL="https://www.codeclouds.com/"
@@ -178,7 +178,7 @@ export default function Page() {
         <h3 id={styles.experienceHeader}>where I study</h3>
         <ExperienceCard
           id="pfw-2027"
-          imgSrc="./PFW.png"
+          imgSrc="/PFW.png"
           imgAlt="MIE Logo SVG"
           companyName="Purdue University - Fort Wayne"
           companyURL="https://www.pfw.edu/"

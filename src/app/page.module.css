@@ -25,7 +25,7 @@
 /* Bio Frame */
 
 .aboutPageMainframe {
-  padding: 5vh 0px 5vh 11.52px;
+  padding: 5vh 15.32px 5vh 15.32px;
 }
 
 .bioFrame {
@@ -277,7 +277,7 @@
 }
 
 :global(#log) {
-  line-height: 1.8vh;
+  line-height: 18px;
   height: 16vh;
   overflow: auto;
 }
