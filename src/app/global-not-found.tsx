@@ -74,6 +74,8 @@ export default function GlobalNotFound() {
 
   return (
     <html lang="en">
+      <title>404 | Maxwell Klema</title>
+      <meta name="description" content="Maxwell Klema personal website." />
       <body>
         <div className={'site-main-frame'}>
           

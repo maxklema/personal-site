@@ -16,6 +16,7 @@ export default async function BlogPostPage({
         
         return (
             <div className={styles.blogMainFrame}>
+                <title>{`Blog ${slug} | Maxwell Klema`}</title>
                 <h2 className={styles.blogTitle}>{post.metadata.title}</h2>
                 <p className={styles.blogDate}>{post.metadata.date}</p>
                 <img src={`/blog thumbnails/${slug}.png`} alt={`blog ${slug} thumbnail image`} />

@@ -14,6 +14,7 @@ export default function Error({
 
   return (
     <div className="errorPageMainFrame">
+        <title>500 | Maxwell Klema</title>
         <img src="/error.png" alt="Error" className="errorImg" />
         <h2 className="errorHeading">Sorry, an Internal Server Error Occured</h2>
         <a onClick={() => window.location.reload()} className="hyperLink">Try Again</a>

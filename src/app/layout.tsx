@@ -91,6 +91,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>Maxwell Klema</title>
+        <meta name="description" content="Maxwell Klema personal website." />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className={'site-main-frame'}>
 

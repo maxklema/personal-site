@@ -99,6 +99,7 @@ export default function Page() {
 
   return (
     <div className={styles.aboutPageMainframe}>
+      <title>Home | Maxwell Klema</title>
 
       {/* BIO */}
       <div className={styles.bioFrame}>
