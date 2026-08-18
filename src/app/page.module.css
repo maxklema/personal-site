@@ -176,22 +176,28 @@
   animation-delay: 1.4s;
 }
 
-:global(#mie-2025) {
+:global(#pypl-2026) {
   opacity: 0;
   animation: fadeIn 1s forwards;
   animation-delay: 1.5s;
 }
 
-:global(#mie-2024) {
+:global(#mie-2025) {
   opacity: 0;
   animation: fadeIn 1s forwards;
   animation-delay: 1.7s;
 }
 
-:global(#cc-2022) {
+:global(#mie-2024) {
   opacity: 0;
   animation: fadeIn 1s forwards;
   animation-delay: 1.9s;
+}
+
+:global(#cc-2022) {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2.1s;
 }
 
 /* Education Frame */

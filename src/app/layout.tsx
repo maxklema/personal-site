@@ -110,7 +110,7 @@ export default function RootLayout({
             <div className={'site-nav'} id="site-nav">
               <Link href="/">about</Link>
               <Link href="/writings">writings</Link>
-              <Link href="/maxklemaresume2025.pdf" target="_blank">resume</Link>
+              <Link href="/maxklemaresume2026.pdf" target="_blank">resume</Link>
             </div>
             <div className={'external-nav'}>
               <Link href="https://www.linkedin.com/in/maxwell-klema/" id={'linkedinIcon'} target="_blank">

@@ -110,7 +110,7 @@ export default function Page() {
             <p>he/him</p>
           </div>
           <br />
-          <p className={styles.introPar}>Hello! I’m a developer, lifelong learner, and vim enjoyer studying Computer Science. I’m currently a junior and graduate in May 2027.</p>
+          <p className={styles.introPar}>Hello! I’m a developer, lifelong learner, and vim enjoyer studying Computer Science. I’m currently a senior and graduate in May 2027.</p>
           <br />
           <p className={styles.introPar}>I enjoy building reliable, impactful software and learning how systems scale. My current interests include DevSecOps, CI/CD automation, cloud infrastructure, and distributed systems.</p>
           <br />
@@ -128,12 +128,30 @@ export default function Page() {
       <div className={styles.experienceFrame}>
         <h3 id={styles.experienceHeader}>where I have been</h3>
         <ExperienceCard
+          id="pypl-2026"
+          imgSrc="/pyplLogo.svg"
+          imgAlt="PayPal Logo SVG"
+          companyName="PayPal"
+          companyURL="https://paypal.com/"
+          positionTitle="Software Engineering Intern"
+          positionDate="Summer 2026"
+          experienceDesc={<p>
+            As a Software Engineering Intern on PayPal’s Enterprise CI/CD team, I architected and built HPED (Harness Pipeline Error Diagnostics) end-to-end. Built with TypeScript and Node.js on an MCP-inspired architecture, HPED leverages 170+ custom tools to automate root-cause analysis and provide actionable remediation for failing pipelines.
+            <br></br>
+            <br></br>
+            During its alpha rollout, I deployed HPED via CLI and web interfaces, supporting 100+ diagnostic sessions across 10+ engineering teams with 85% root-cause accuracy in its first three days. The platform eliminates reliance on manual support escalations, establishing a scalable foundation for company-wide deployment across all PayPal teams building 
+            on <Link href="https://www.harness.io/" target="_blank" id={styles.hyperlink}>
+              Harness
+            </Link>.
+          </p>}
+        />
+        <ExperienceCard
           id="mie-2025"
           imgSrc="/MIE.svg"
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
           companyURL="https://mieweb.org/"
-          positionTitle="Software Developer Intern"
+          positionTitle="Software Engineering Intern"
           positionDate="Summer 2025"
           experienceDesc={<p>Co-led the design and deployment of a company-wide, open-source{" "}
             <Link href="https://opensource.mieweb.org/" target="_blank" id={styles.hyperlink}>
@@ -150,7 +168,7 @@ export default function Page() {
           imgAlt="MIE Logo SVG"
           companyName="Medical Informatics Engineering"
           companyURL="https://mieweb.org/"
-          positionTitle="Software Developer Intern"
+          positionTitle="Software Engineering Intern"
           positionDate="Summer 2024"
           experienceDesc={<p>Built{" "}
             <Link href="https://www.npmjs.com/package/@maxklema/mie-api-tools" target="_blank" id={styles.hyperlink}>WebChart API Tools</Link>, including a <Link href="https://github.com/maxklema/mie-data-migration" target="_blank" id={styles.hyperlink}>CLI import/export workflow</Link> that reduced chart import times by an average of 90%.
